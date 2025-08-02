@@ -1,0 +1,1027 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper, left=15mm, right=20mm, top=15mm, bottom=20mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage[none]{hyphenat}
+\newcommand\abs[1]{\left|#1\right|}
+\setlist[enumerate]{noitemsep}
+\sloppy
+
+\begin{document}
+
+% Define commands for Statutes, Explications, Appendices, and Notes
+\newcommand{\Statute}[2]{\item[S#1]\label{S#1} #2}
+\newcommand{\Explication}[2]{\item[E#1]\label{E#1} #2}
+\newcommand{\Appendix}[2]{\item[A#1]\label{A#1} #2}
+\newcommand{\Note}[2]{\item[N#1]\label{N#1} \emph{#2}}
+\newcommand{\Separator}[1]{\item[]\noindent\rule[4pt]{\linewidth}{0.4pt}}
+\newcommand{\IOIn}[1][]{IOI\emph{'$n{#1}$}}
+\newcommand{\Link}[1]{\hyperref[#1]{#1}}
+
+\centerline{\huge \textbf{International Olympiad in Informatics}}
+\vspace{1em}
+\centerline{\huge \textbf{Regulations}}
+\vspace{2em}
+\begin{enumerate}
+\item \hyperref[sec:1]{Preamble}
+\item \hyperref[sec:2]{Participants}
+\item \hyperref[sec:3]{Committees, Office Bearers and Duties}
+\item \hyperref[sec:4]{Host Nomination and Selection}
+\item \hyperref[sec:5]{Responsibilities of Present Host}
+\item \hyperref[sec:6]{Competition, Judging and Awards}
+\item \hyperref[sec:7]{Revision of the Regulations}
+\end{enumerate}
+\vspace{2em}
+Approved by GA, IOI 2024
+
+\vspace*{\fill}
+\centering{\textbf{Quick links}}\par
+\vspace{1em}
+\begin{tabular}{ l l l }
+    Eligibility of contestants: & \Link{S2.5} & See also \Link{E2.5}, \Link{A2.5}, \Link{N2.5.1}, \Link{N2.5.2} \\
+    Process for new countries to join: & \Link{N2.6.2} & See also \Link{S2.6}, \Link{E2.6.1} \\
+    Medal cutoffs: & \Link{S6.11} & See also \Link{N6.11.4} \\
+\end{tabular}
+
+\newpage
+\section{Preamble}
+\label{sec:1}
+\begin{itemize}
+
+\Statute{1.1}{The \textbf{International Olympiad in Informatics} (as an ongoing event) is an annual international informatics competition for individual contestants from various invited countries, accompanied by social and cultural programmes.}
+
+\Note{1.1}{The original idea of initiating the IOI was proposed to the 24th general conference of UNESCO by the Bulgarian delegate Professor Blagovest Sendov (1932–2020) in October 1987. This plan was included into the ﬁfth main program of UNESCO for the biennium 1988–1989. In May 1989, UNESCO initiated and sponsored the ﬁrst IOI, which was held in Pravetz, Bulgaria.}
+
+\Separator{}
+
+\Statute{1.2}{The \textbf{Statutes}, \textbf{Explications}, \textbf{Appendices} and the \textbf{Code of Conduct} together form the \textbf{Regulations} of the International Olympiad in Informatics. Details of responsibilities can be found in the Explications; details of procedures can be found in the Appendices. Participants are expected to adhere to the Code of Conduct.}
+
+\Explication{1.2}{All statements which are placed in the Statutes, the Explications, Appendices and the Code of Conduct, as well as rules and procedures drawn up by the Host Country for IOI’n, are meant to regulate the formal communication between the participants. Where the Regulations do not give explicit guidance, the participants are asked to act in the general spirit of the Regulations.}
+
+\Note{1.2.1}{The IOI Regulations have two purposes: a formal description of the IOI, and information about the IOI. The Regulations are also meant to be more than just procedures. The other purpose is that the IOI Regulations give:
+\begin{itemize}
+    \item New participating and observing Countries a quick overall idea of what the IOI is and how it works;
+    \item Information about what steps should be made to become a Host and to organise an IOI in a certain year; 
+    \item Historical information.
+\end{itemize}}
+
+\Note{1.2.2}{Notes provide background and are for information purposes.  They do not form part of the formal Regulations.}
+    
+\Separator{}
+    
+\Statute{1.3}{Throughout these regulations all words and phrases shall have meanings as deﬁned in the section where they appear in \emph{bold}.}
+
+\Explication{1.3}{The interpretation of the Regulations lies with the President of IOI, but can be overridden with a 2/3 GA majority.}
+
+\Separator{}
+
+\Statute{1.4}{In the Regulations the following abbreviations are used: \par
+\begin{tabular}{ l l l }
+    \Link{S3.1} & GA & General Assembly \\
+    \Link{S3.4} & IC & International Committee \\
+    \Link{S1.1} & IOI & International Olympiad in Informatics \\
+    & \IOIn{} & IOI held in the year \emph{n} \\
+    & \IOIn{-i} & IOI preceding \IOIn{} by \emph{i} year(s) \\
+    & \IOIn{+i} & IOI following \IOIn{} by \emph{i} year(s) \\
+    \Link{S3.10} & ISC & International Scientific Committee \\
+    \Link{S3.14} & ITC & International Technical Committee \\
+    \Link{S3.8} & OIOI & Office of the IOI \\
+    \Link{S3.19} & HSC & Host Scientific Committee \\
+    & (\texttimes\emph{i}) & \emph{i} people only \\
+    & S\emph{p.q} & Statute \emph{p.q} \\
+    & E\emph{p.q(.r)} & Explication relating to Statute \emph{p.q} \\
+    & A\emph{p.q(.r)} & Appendix relating to Statute \emph{p.q} \\
+    & N\emph{p.q(.r)} & Note relating to Statute \emph{p.q} \\
+\end{tabular}}
+
+\Separator{}
+
+\Statute{1.5}{The official working language of the IOI is English.}
+
+\Separator{}
+
+\Statute{1.6}{In the scope of the IOI the concept \textbf{Informatics} means the domain that is also known as computer science, computing science and information technology, but not the domain computer engineering.}
+
+\Separator{}
+
+\Statute{1.7}{The main objectives to be accomplished by the IOI are:
+\begin{itemize}
+    \item To discover, encourage, bring together, challenge, and give recognition to young people who are exceptionally talented in the ﬁeld of informatics;
+    \item To foster friendly international relationships among computer scientists and informatics educators;
+    \item To bring the discipline of informatics to the attention of young people;
+    \item To promote the organisation of informatics competitions for students at schools for secondary education;
+    \item To encourage countries to organise a future IOI in their country.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{1.8}{The assets and liabilities of the IOI shall vest and be registered in the name of the \textbf{IOI Foundation}.}
+
+\Separator{}
+
+\Statute{1.9}{All claims against the IOI shall be limited to its assets, and there shall be no personal liability against participants of the IOI.}
+
+\end{itemize}
+
+\newpage
+\section{Participants}
+\label{sec:2}
+\begin{itemize}
+
+\Note{2}{All persons mentioned in Statutes \Link{S2.3}–\Link{S2.9} are referred to in this document as \textbf{Participants}.}
+
+\Separator{}
+
+\Statute{2.1}{For the IOI, a \textbf{Country} is a state that has an officially recognised relationship with the United Nations, UNESCO, or which has already taken part in one or more past IOIs.}
+
+\Separator{}
+
+\Statute{2.2}{The organisation of the IOI in year \emph{n} is the responsibility of the \textbf{Host Country} for \IOIn{}. The Host Country may consist of one or more Countries. A Host Country consists of the responsible Ministry(ies), Institution(s), and/or Corporation(s) in the relevant Countries.}
+
+\Explication{2.2}{A Host Country can have the status of Past Host, Present Host, Future Host or Candidate Host. Wherever the singular is used in the Statutes for any of these terms, the same shall be construed as meaning the plural unless specifically stated.}
+
+\Note{2.2}{It is firmly recommended that Countries reasonably circulate the yearly issues of the IOI among each other. To spread the average costs for travel it is also recommended that Host Countries are staggered geographically.}
+
+\Separator{}
+
+\Statute{2.3}{Each participating Country is represented by a \textbf{National Delegation}; all members of a National Delegation represent one Country. A National Delegation is headed by a \textbf{Delegation Leader}, includes a team of one to four Contestants and, if there is more than one Contestant, may include a Deputy Leader.}
+
+\Explication{2.3.1}{If the Host Country for \IOIn{} wants to invite delegations with more or less than four Contestants, it must be approved at a GA meeting during \IOIn{-1}.}
+
+\Explication{2.3.2}{The Delegation Leader and/or the Deputy Leader must have an appropriate scientific background. They must be qualified to represent their Contestants in technical and task issues that arise during the competition and GA meetings.}
+
+\Separator{}
+
+\Statute{2.4}{The \textbf{Deputy Leader} can act as a replacement for the Delegation Leader in all situations and may assist their Delegation Leader in all their duties.}
+
+\Separator{}
+
+\Statute{2.5}{A \textbf{Contestant} is a student who
+\begin{enumerate}
+    \item for the majority of the period 1 September to 31 December in the year before \IOIn{}:
+    \begin{itemize}
+        \item was enrolled in a school at a level of secondary education or lower, in the Country they are representing; and
+        \item was not enrolled in a degree programme at a tertiary education institution with a half-time or greater load.
+    \end{itemize}
+    Exceptions to this may be requested through the IC. Students who are studying abroad may instead represent the Country of their nationality.
+    \item is not older than twenty years on the 1st of July of the year of \IOIn{}.
+\end{enumerate}}
+
+\Explication{2.5}{Secondary education ends with some form of school-leaving examination. Tertiary education, such as offered by Technicons and Universities, may immediately follow Secondary education, but may also be preceded by some form of preparatory pre-tertiary education. Such pre-tertiary education is not regarded as Secondary education.}
+
+\Appendix{2.5}{Students who are to be considered for representing their delegations at an IOI must, in addition to meeting the eligibility requirements set forth in \Link{S2.5}, have participated in a selection procedure that:
+\begin{itemize}
+    \item Is based on ability and includes a test of the students’ programming and problem solving ability;
+    \item Is open to all eligible students in their delegation’s Country, although restrictions may be placed on where, when and how students can enter the procedure, and a student’s nationality can be limited to that of the relevant Country.
+\end{itemize}}
+
+\Note{2.5.1}{It is firmly recommended that Contestants should have participated in a local, regional or national informatics competition in their Country as a pre-selection for the IOI, and that they belong to the winners of that competition.}
+
+\Note{2.5.2}{The age limit for contestants may also be deﬁned as: Every contestant at \IOIn{} (held in year n) must have been born on or after 1st July, in the year $n - 20$.}
+
+\Separator{}
+
+\Statute{2.6}{An Invited Observer is a representative of:
+\begin{itemize}
+\item A new Country that has not previously participated at the IOI and is bringing no contestants (\texttimes1);
+\item Future Host of \IOIn{+1} (\texttimes2) and \IOIn{+2} (\texttimes1).
+\end{itemize}
+A Country can only have Invited Observer status, as a new Country, for one year. Exceptions may be considered by the IC.}
+
+\Explication{2.6.1}{Each Country has the right to be invited once as an Invited Observer.  Exceptional invitations may also be considered, as described in \Link{S2.6}.}
+
+\Explication{2.6.2}{An upper limit on the number of new countries must be set by the IC, with agreement by the Host Countries for \IOIn{+1} and \IOIn{+2}, during \IOIn{}.}
+
+\Note{2.6.1}{The Invited Observer status (for new Countries) is introduced as a possibility to see the IOI in practice before participating in the IOI. But the more functional reason is that by introducing such Invited Observer status, the number of Participating Countries is regulated. This has the advantage that the IOI and the Future Hosts are not surprised by an unforeseen amount of complete Delegations in the next year(s).}
+
+\Note{2.6.2}{If a Country wishes to attend IOI as an Invited Observer, they should contact the Secretary of the IOI for information on how to apply. A typical application would include information about programmes that are already established within the Country. The IC is responsible for deciding whether to approve such applications.}
+
+\Separator{}
+
+\Statute{2.7}{The other invited participants, whose cost is covered by a Host Country:
+\begin{itemize}
+    \item IC, ISC and ITC Members;
+    \item The organiser of the IOI conference, if it is scheduled;
+    \item At most 3 \textbf{Invited Guests} proposed by the IC in co-operation with the Host Country.
+\end{itemize}}
+
+\Statute{2.8}{Additional participants, whose cost is not expected to be covered by a Host Country:
+\begin{itemize}
+    \item \textbf{External Contestant}: Any contestant who is an unclassified participant in the contest;
+    \item \textbf{Adjunct to the Team}: A person who has a duty adjunct to the team (e.g. nurse, chaperon or translator);
+    \item \textbf{Adjunct to the IC / ISC / ITC / OIOI}: Invited by the IC / ISC / ITC / OIOI based on need;
+    \item \textbf{Guests}: Participants who are not classified as Invited Guests, have no duty, and participate on the basis of entertainment / sightseeing (e.g. family members).
+\end{itemize}}
+
+\Explication{2.8}{A Country or Committee wishing to send such participants must agree this with the Host Country prior to the IOI, in a time period to be determined by the host.}
+
+\Separator{}
+
+\Statute{2.9}{The Host Country may invite additional participants, such as:
+\begin{itemize}
+    \item \textbf{Local Committee Members};
+    \item \textbf{Press};
+    \item \textbf{Guides}.
+\end{itemize}}
+
+\end{itemize}
+
+\newpage
+\section{Committees, Office Bearers and Duties}
+\label{sec:3}
+\begin{itemize}
+
+\Statute{3.1}{The General Assembly is a temporary, short-term committee during \IOIn{}, which is composed of the Delegation Leaders and the Deputy Leaders of all Participating Countries. The GA is the owner of the IOI.}
+
+\Explication{3.1}{The GA acts in the general spirit of the Regulations. The GA has the following tasks:
+\begin{itemize}
+    \item Take decisions on issues not provided for in the Regulations;
+    \item Make recommendations to the IC;
+    \item Decide on proposals made by the IC;
+    \item Ratify the Registration Fee for \IOIn{+1};
+    \item Ratify the Host Nomination and Selection;
+    \item Supervise and participate in the selection of Competition Tasks and confirm the awards;
+    \item Elect individuals to serve on the IC, replacing any retiring elected members;
+    \item Elect individuals to serve on the ISC, replacing any retiring elected members;
+    \item Approve the budget for the forthcoming year.
+\end{itemize}}
+
+\Note{3.1}{2/3 majority of the voting members of the GA in attendance at IOI’n has ultimate decision power at IOI, including overriding Regulations in exceptional circumstances.}
+
+\Separator{}
+
+\Statute{3.2}{The GA must hold at least six meetings at \IOIn{}, including:
+\begin{itemize}
+    \item Before the first Competition period and before Delegation Leaders are segregated from their Contestants, to include the discussion of the Contest Rules;
+    \item Before the first Competition period and after Delegation Leaders are segregated from their Contestants, to include the presentation and translation of the first Competition Tasks;
+    \item After the first Competition period and after Delegation Leaders have had the opportunity for communication with contestants, to include matters arising from the first Competition period and evaluation;
+    \item Before the second Competition period and after Delegation Leaders are segregated from their Contestants, to include the presentation and translation of the second Competition Tasks;
+    \item After the second Competition period and after Delegation Leaders have had the opportunity for communication with contestants, to include matters arising from the second Competition period and evaluation;
+    \item Before the Awards Ceremony and after all evaluation is complete, to include the confirming of awards.
+\end{itemize}}
+
+\Explication{3.2}{The GA meetings should be attended by:
+\begin{itemize}
+    \item The President of IOI;
+    \item The Chairs of GA, IOI’n, HSC, ISC and ITC;
+    \item The Secretary.
+\end{itemize}
+GA meetings may be attended by:
+\begin{itemize}
+    \item Members of the HSC and the Organising Committee;
+    \item Members of the IC, ISC and ITC;
+    \item Invited Observers and Adjuncts to Teams;
+    \item Other people may also attend meetings of the GA with permission of the IC or the Chair of \IOIn{}.
+\end{itemize}
+GA meetings must not be attended by Contestants.}
+
+\Appendix{3.2}{GA procedure:
+\begin{itemize}
+    \item GA meetings are chaired by the Chair of GA;
+    \item All meetings must be announced by the Chair or Host Country. There may be no ad-hoc meetings;
+    \item Members of the GA must be given 24 hours notice of meetings;
+    \item Members of the GA must be given 24 hours notice of any motions that require voting, unless 2/3 of the voting members in attendance at IOI'n support the vote taking place without the notice. It is permissible for a motion to have wording changes without major semantic changes without requiring a new 24 hours notice;
+    \item Agendas and meetings are not limited to those discussed in \Link{S3.2};
+    \item At meetings of the GA, the voting procedure is on the basis of one vote for each country that participates through a National Delegation;
+    \item Except where explicitly stated, votes require a simple majority;
+    \item Votes on overriding any Regulations require a 2/3 majority to pass, as noted in \Link{S7.2};
+    \item A quorum of a third of the voting members is required. In the absence of a quorum the Chair can call for another meeting;
+    \item In voting procedures the Chair does not vote, but the Chair may cast a deciding vote;
+    \item Members of the GA, IC, ISC, ITC and Organizing Committee have the right to address the GA with the permission of the Chair;
+    \item The Secretary must ensure that the minutes of the GA meetings, which impact on the future operations and / or status of the IOI, are prepared and distributed to all relevant parties within 30 days. After being ratified by IC, at the first practical opportunity, they must be made available to the IOI community.
+    \item The required percentage for a successful vote is relative to the number of non-abstentions;
+    \item For a motion with three or more options and n required selections, a single round with ranked ballots will be conducted, with the winning n options determined using the Schulze method. Should the motion require something stricter than a simple majority, a follow-up yes/no vote to accept these n winning options will be held.
+\end{itemize}}
+
+\Note{3.2.1}{The specific details and implementation of the Schulze method will be determined before the GA meeting, in consultation with the person(s) providing the supporting software (e.g., the ITC).}
+
+\Note{3.2.2}{The rule for resolving ties may also be defined as: In the event of a tie preventing the top $n$ options from being identified (with $q$ options tied at position $p$, where $p \le n < p+q$):
+\begin{itemize}
+    \item If $p>2$, the top $p-1$ options are selected and a new round is held between the $q$ tied options for the remaining selections.
+    \item If $p=1$, a new round is held between the $q$ tied options.
+\end{itemize}}
+
+\Note{3.2.3}{Non-binding polls that simply gauge the GA’s opinion do not require 24 hours notice.}
+
+\Separator{}
+
+\Statute{3.3}{GA meetings are chaired by the \textbf{Chair of GA}. The Chair of GA is an independent individual, selected by the Host Country in co-operation with the IC, with good English communication skills and extensive experience in chairing meetings.}
+
+\Separator{}
+
+\Statute{3.4}{The \textbf{International Committee} is a long-term standing committee. It consists of eleven voting members, all from different Participating Countries, plus a non-voting Secretary and Treasurer:
+\begin{itemize}
+    \item The President of IOI (elected);
+    \item One immediate Past Host representative of \IOIn{-1};
+    \item One Present Host representative of \IOIn{};
+    \item Three immediate Future or Candidate Host representatives of \IOIn{+1}, \IOIn{+2}, and \IOIn{+3};
+    \item Five other elected representatives;
+    \item Secretary (Non-voting);
+    \item Treasurer (Non-voting).
+\end{itemize}
+Ideally the composition of the International Committee will be diverse enough to represent the richness of the communities both within and beyond IOI that it aspires to represent.}
+
+\Explication{3.4}{The IC acts in the general spirit of the Regulations. The IC shall have overall responsibility for the management and administration of the affairs of the IOI, subject to such direction as given in these Regulations and, without limiting the generality of this responsibility, shall have the following powers and duties:
+\begin{itemize}
+    \item Make proposals to the GA about changes in the Regulations;
+    \item Elaborate on the recommendations of the GA;
+    \item Make proposals to the GA about Candidate Host nominations and selection;
+    \item Invite the Participants to \IOIn{} according to \Link{S5.6};
+    \item Act on behalf of the GA between IOIs, and to inform the GA about the activities of the IC during this period;
+    \item Appoint a Secretary and a Treasurer, and set the terms of the appointments;
+    \item Establish sub-committees and working groups as necessary to achieve the aims and objectives of the IOI, and to confer such powers and duties on these committees as may be considered expedient and appropriate;
+    \item Receive reports from the Secretary, Treasurer, committees and working groups;
+    \item Accept financial contributions, bequests and gifts, whether in cash or kind, with or without conditions imposed by the contributor, as long as these conditions are not inconsistent with the Regulations;
+    \item Recommend a Registration Fee;
+    \item Approve expenditure and authorise payment by the Treasurer, from such funds as may be available for those purposes, provided reasonable remuneration for services is payable only for services actually rendered to the IOI. This excludes costs obligated and covered by Host Countries;
+    \item Engage in any necessary negotiations or legal proceedings, and to appoint one or more members of the IC to represent the IOI in such negotiations or proceedings, with whatever powers are deemed necessary;
+    \item Prepare a budget for the forthcoming year for approval by the GA;
+    \item Meet with the Organizing Committee for \IOIn{} in the Organizing Committee’s country, approximately six months before \IOIn{}, in order to:
+    \begin{itemize}
+        \item Evaluate \IOIn{-1}
+        \item Examine the organisation of \IOIn{}
+    \end{itemize}
+    \item Manage the Distinguished Service Awards;
+    \item Act as arbitrator and resolve disputes arising prior to and during the IOI;
+    \item To do such things as may be required or deemed desirable, in the opinion of the IC, to advance and promote the objectives of the IOI;
+    \item Make such decisions as may be required in exceptional circumstances, including if \IOIn{} does not take place.
+\end{itemize}
+It should be encouraged that all IC members actively participate in the IC and that there are no vacant positions on the IC.\par
+When a member is selected to represent the Host Country for \IOIn{+3}, that member is expected to remain a member for five years.}
+
+\Appendix{3.4}{Nominations for President of IOI:
+\begin{itemize}
+    \item Nominations will be called at least three months prior to the IOI, and remain open until the GA meeting “Before the second Competition period” (see \Link{S3.2}), when nominations will be announced;
+    \item Nominations must be proposed and seconded (by Countries or individuals) and the nominee must agree to their nomination;
+    \item Nominees must present a document indicating the support of at least 20\% of the delegations (as deﬁned in \Link{S3.2}) who are present at IOI’n.  Nominees must submit a written motivation and a brief CV;
+    \item Nominees may make a brief presentation;
+    \item The results of the election for President of IOI should be announced before the votes are taken for IC, ISC or ITC elections;
+    \item Nominees for President of IOI may run even if they are an elected member of IC, ISC or ITC. Should such a nominee win, they shall retire from their current position and the remainder of their term shall be immediately put up for an election;
+    \item Nominees for President of IOI may simultaneously run for IC, ISC or ITC. Should such a nominee win, they shall remove their candidacy from the other election.
+\end{itemize}
+The election procedure for President of IOI follows the procedure outlined for elections in \Link{A3.5}.}
+
+\Note{3.4.1}{The IC should include Countries that represent all geographical regions of the world.}
+
+\Note{3.4.2}{Delegations, as deﬁned in \Link{S2.3}, require contestants and hence exclude Invited Observers.}
+
+\Note{3.4.3}{It is expected that nominations will be called for in the IOI newsletter and on the IOI website.}
+
+\Separator{}
+
+\Statute{3.5}{The elected members of the IC are elected by the GA, for a period of three years. Elected IC members are individuals and not representatives of specific countries.}
+
+\Explication{3.5.1}{It is the intention that, at any time, the elected representatives (including the President of IOI) have 3, 3, 2, 2, 1 and 1 year(s) respectively left to serve. In the event of multiple elected IC representatives retiring, replacement members are elected, as necessary, for reduced periods. The President of IOI is always elected for a period of 3 years. Non-elected (Host) representatives are replaced by members from the same Host Country.}
+
+\Explication{3.5.2}{Elected representatives may not serve more than three consecutive terms. It is expected that the President of IOI will rotate on a regular basis.}
+
+\Appendix{3.5}{Nominations for IC:
+\begin{itemize}
+    \item Nominated individuals’ names are to be submitted to the Secretary;
+    \item Nominations must be proposed and seconded, by Countries or individuals;
+    \item Nominations must be accompanied by brief motivation, from the nominators and nominee, of no more than half an A4 page;
+    \item The nominee must agree to their nomination;
+    \item The President of IOI will call for nominations at the first GA meeting;
+    \item Nominees may make a brief presentation;
+    \item The closing date for nominations is the GA meeting “Before the second Competition period and after Delegation Leaders are segregated from their Contestants” (see \Link{S3.2}).
+\end{itemize}
+If there is a need for an election:
+\begin{itemize}
+    \item The IC must establish a committee of scrutineers of the election. These persons must be approved at the first GA;
+    \item The election will take place at the last GA meeting;
+    \item The Secretary must oversee the preparation of  ballots reflecting the names of all candidates, listed in alphabetical order followed by “leave the seat vacant”;
+    \item The President of IOI should establish what the voting strength is before the ballots are made available by the scrutineers. The number of ballots made available must tally with the number of countries present in the GA at that stage and eligible to vote;
+    \item Voting, in an election with n positions, follows the voting procedure in A3.2 for multiple options:
+    \begin{itemize}
+        \item Countries wishing to abstain from voting may choose not to submit a ballot.
+        \item If the available positions have different term lengths, then higher ranking candidates are given the longer terms unless they explicitly choose otherwise.
+        \item The scrutineers will confirm the result and advise the Chair of \IOIn{} who will make the announcement.
+    \end{itemize}
+\end{itemize}
+If there are fewer nominations than available positions, or “leave the seat vacant” is selected, then the remaining position(s) will be left empty, and will be filled during the following IOI for a term that is one year shorter.}
+
+\Separator{}
+
+\Statute{3.6}{The IC is chaired by the \textbf{President of IOI}. The President of IOI is an independent individual, chosen to give continuity and leadership to the IOI, able to promote the development of IOI and be a recognized ambassador of the organization.}
+
+\Explication{3.6}{The President of IOI should:
+\begin{itemize}
+    \item Have a background in Computer Science / Education;
+    \item Have experience in running national or international competitions;
+    \item Be dedicated and committed to the objectives of IOI;
+    \item Have played an active role in IOI;
+    \item Have a record of leadership.
+\end{itemize}
+The President of IOI has the following responsibilities:
+\begin{itemize}
+    \item Chair the IC;
+    \item Function as an addressee for the IOI;
+    \item Actively promote the objectives of the IOI;
+    \item Actively seek and act on the views and opinions of the IOI community;
+    \item Ensure communication and co-operation within the IOI community;
+    \item Protect and uphold the regulations of IOI;
+    \item Prepare proposals for the systematic growth and development of the IOI and its components;
+    \item Report to the IC and GA on the activities of the President of IOI;
+    \item Establish links with other international olympiads, and organisations in the information technology ﬁeld who would benefit from an associate with the IOI;
+    \item Take executive decisions in the event of an unforeseen crisis.
+\end{itemize}}
+
+\Appendix{3.6.1}{The President of IOI may be removed from office by a 2/3 majority vote of the GA, at an official GA meeting  (see \Link{A3.2}).}
+
+\Appendix{3.6.2}{If the position of President becomes vacant, the IC should hold a meeting (possibly online) as soon as practicable to choose a temporary replacement from amongst the elected IC members, until a new President can be elected by the GA following the nomination and election process described in \Link{A3.4}.}
+
+\Separator{}
+
+\Statute{3.7}{The IC is obliged to meet during each IOI and approximately six months prior to each IOI.}
+
+\Appendix{3.7}{IC procedure:
+\begin{itemize}
+    \item At meetings of the IC, the voting procedure is on the basis of “one voting member, one vote”. The motions require a simple majority of the non-abstaining votes cast, however for the motion to pass or fail more than 25\% of IC voting members need to support the winning choice;
+    \item Voting procedure for three or more options follows the Schulze method as in \Link{A3.2}, with a follow-up yes/no vote to accept these $n$ winning options;
+    \item A quorum of half the voting members must be present at any official meeting of the IC;
+    \item The members of the IC are committed to share information about their tasks;
+    \item IC meetings are closed, but the IC may invite individuals to attend specified meetings; the invitation of all invitees to IC meetings outside the IOI, and invitees to IC meetings during an IOI who are not otherwise present, must be approved by the Organizing Committee. These invitees do not have voting rights;
+    \item Once approved by the IC, the minutes of the IC meetings must be made available to the IOI community.
+    \item Individual votes cast for any given motion need to be communicated to the GA alongside the minutes of the IC meetings, unless IC approves not doing so before voting on a motion begins.
+\end{itemize}}
+
+\Note{3.7}{Anonymous IC voting is expected in exceptional circumstances only (e.g., voting for Distinguished Service Awards or votes on issues specific to a single Country).}
+
+\Separator{}
+
+\Statute{3.8}{The \textbf{Office of the IOI} is headed by the \textbf{Secretary} of the IOI, who is an ongoing non-voting member of the IC. The OIOI is dedicated to servicing the administrative and developmental needs of the IOI. The Secretary is appointed by the IC for a minimum period of three years.}
+
+\Explication{3.8}{The OIOI has the following responsibilities:
+\begin{itemize}
+    \item Overall administration of the IC and IOI;
+    \item Maintain up to date databases of participating countries (including observers), including names and address of Delegation Leaders and appropriate Ministries;
+    \item Provide a clearing-house facility (collection, maintenance and dissemination) of all IOI related material (Locally and Internationally);
+    \item Support the IC, GA, a Present Host, a Candidate Host or a Future Host;
+    \item Control and reporting on the financial affairs of the OIOI.
+\end{itemize}
+The Secretary has the following responsibilities:
+\begin{itemize}
+    \item Ensure the responsibilities of the OIOI are implemented;
+    \item Ensure that the minutes of all IC and GA meetings are prepared and distributed to all relevant parties within one month after the conclusion of each meeting;
+    \item Follow up on a regular basis any actions arising out of the minutes of the IC and the GA and report on their status to the IC;
+    \item Ensure that the report on \IOIn{} is distributed as provided for in \Link{S5.12};
+    \item Prepare and submit a bi-annual Secretary’s activity report to all members of IC, and a final annual report for approval by the GA at each IOI;
+    \item Ensure that all amendments to the Regulations passed and approved by IC and GA are incorporated in one document;
+    \item Prepare detailed agendas for each IC meeting in close collaboration with the President of IOI and distribute these to all members of IC at least one month before each IC meeting;
+    \item Prepare detailed agendas for each GA meeting at \IOIn{};
+    \item Prepare / provide background documents on specific issues delegated by the IC or arising from minutes;
+    \item Attend to all correspondence, applicable to the OIOI, received from individuals or participating countries. This excludes those specific responsibilities of the Organizing Committee for \IOIn{}.
+\end{itemize}}
+
+\Appendix{3.8}{In the absence of the Secretary, this role is taken-up by the President of IOI.}
+
+\Note{3.8}{In the process of organising IOIs since 1989 all kind of materials about past IOIs are collected. This information can be found at \url{https://www.ioinformatics.org}.}
+
+\Separator{}
+
+\Statute{3.9}{The \textbf{Treasurer} administers the financial needs of the IOI. The Treasurer is an ongoing non-voting member of the IC and is appointed by the IC for a minimum period of three years.}
+
+\Explication{3.9}{The Treasurer has the following responsibilities:
+\begin{itemize}
+    \item Administration of the financial needs of the IOI;
+    \item Ensuring that all funds received are deposited with the IOI Foundation;
+    \item Pay approved expenses of the IOI, from such funds as may be available for those purposes. This excludes costs obligated and covered by Host Countries;
+    \item Prepare and circulate a bi-annual detailed OIOI Income and Expenditure statement to all members of IC, and a final annual financial report for approval by the GA at each IOI;
+    \item Keep proper books of account which shall be audited annually, and the Audited financial statements to be approved by the GA;
+    \item Assist the IC in preparing the budget for the forthcoming year.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{3.10}{The \textbf{International Scientific Committee}, a long-term standing committee, works with the HSC of each Host Country to ensure continuity and quality control for IOI competitions. Members of the ISC may not be members of a National Delegation. The ISC consists of six voting members plus two non-voting members all of them computer specialists with a background in Olympiad task creation:
+\begin{itemize}
+    \item 1 member is selected by the Host Country for \IOIn{-1};
+    \item 1 member is selected by the Host Country for \IOIn{};
+    \item 1 member is selected by the Host Country for \IOIn{+1};
+    \item 1 non-voting member is selected by the Host Country for \IOIn{+2};
+    \item 3 members are elected by the GA;
+    \item The Chair of the ITC, who is non-voting.
+\end{itemize}}
+
+\Explication{3.10}{The ISC is responsible for:
+\begin{itemize}
+    \item Ensuring that an appropriate set of Competition Tasks has been created;
+    \item Overseeing the evaluation procedure;
+    \item Supervising the development of the IOI based on trends in computing science and its education;
+    \item Developing and maintaining the IOI syllabus;
+    \item Arbitrating evaluation disputes between Delegation Leaders and the HSC;
+    \item Meeting during \IOIn{-1} to ﬁx guidelines for the production of problems for \IOIn{}.
+\end{itemize}
+When a member is selected to represent the Host Country for \IOIn{+1}, they should remain a member for three years.\par
+The member from each Host Country should be the Chair of their respective HSC.}
+
+\Appendix{3.10}{ISC nominations and elections:
+\begin{itemize}
+    \item The IC proposes a list of candidates for the ISC election. The GA can extend that list with any candidate supported by at least five participating countries;
+    \item The election procedure for ISC follows the procedure outlined for elections in \Link{A3.5}.
+\end{itemize}}
+
+\Note{3.10.1}{This structure is intended to ensure that the committee has both long-term and experienced members along with representatives of present, past and future organisers.}
+
+\Note{3.10.2}{The Chair of the ITC is non-voting because it is expected that they will frequently miss ISC meetings due to their ITC responsibilities.}
+
+\Separator{}
+
+\Statute{3.11}{The elected representatives on the ISC are elected by the GA, for a period of three years. Elected ISC members are individuals and not representatives of specific countries.}
+
+\Explication{3.11}{It is the intention that, at any time, the elected representatives have 3, 2 and 1 year(s) respectively left to serve. In the event of multiple elected ISC members retiring, replacement members are elected, as necessary, for reduced periods. Non-elected (Host) representatives are replaced by members from the same Host Country.}
+
+\Separator{}
+
+\Statute{3.12}{The \textbf{Chair of ISC} is elected from and by the committee members. The Chair of ISC reports directly to the IC.}
+
+\Explication{3.12}{The Chair of ISC must be one of the three members elected by the GA.}
+
+\Separator{}
+
+\Statute{3.13}{The ISC is obliged to meet during each IOI and between 2 and 6 months prior to each IOI.}
+
+\Explication{3.13}{Details on the syllabus for \IOIn{} must be distributed to the GA at \IOIn{-1}.}
+
+\Appendix{3.13}{ISC procedure:
+\begin{itemize}
+    \item At meetings of the ISC, the voting procedure is on the basis of “one voting member, one vote”. If there is a tie then the Chair of ISC may cast the deciding vote (in addition to their normal vote).
+    \item The members of the ISC are committed to share information about their tasks;
+    \item The ISC may select adjunct members who may include Host Country representatives and other suitable persons. Adjunct members will not have a vote on the committee nor do any other invitees;
+    \item ISC members including the adjunct members will not, after seeing the tasks, train (prospective) Contestants or engage in any act that results in the leakage of tasks, covered or non-covered topics. They are obliged to keep IOI task descriptions and all related material confidential until published at the IOI;
+    \item The ISC will be in frequent communication with the HSC of the Host Country.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{3.14}{The International Technical Committee, a long-term standing committee, works with each Host Country to ensure continuity and quality control of the IOI competition environment (hardware and software). Members of the ITC may not be members of a National Delegation. The ITC consists of seven voting members, all of them computer specialists with a background in Olympiad contest systems:
+\begin{itemize}
+    \item 1 member is selected by the Host Country for \IOIn{-1};
+    \item 1 member is selected by the Host Country for \IOIn{};
+    \item 1 member is selected by the Host Country for \IOIn{+1};
+    \item 1 member is selected by the Host Country for \IOIn{+2};
+    \item 3 members are proposed by the ISC for GA approval or election.
+\end{itemize}}
+
+\Explication{3.14}{The ITC is responsible for proposals, development and support concerning technical matters. Areas for consideration include:
+\begin{itemize}
+    \item Supervising creation and implementation of the grading system and administrative software;
+    \item Operating systems;
+    \item Program development tools, including compilers, editors and debuggers;
+    \item Computer hardware;
+    \item Networks and IT security.
+\end{itemize}
+When a member is selected to represent the Host Country for \IOIn{+1}, they should remain a member for three years.}
+
+\Note{3.14}{This structure is intended to ensure that the committee has both long-term and experienced members along with representatives of present, past and future organisers.}
+
+\Separator{}
+
+\Statute{3.15}{The ISC-proposed members on the ITC are proposed by the ISC for a period of three years, and require GA approval.  The ISC may propose more members than necessary, in which case the GA will elect the required number of members from amongst the ISC proposals. The ISC-proposed members are individuals and not representatives of specific countries.}
+
+\Explication{3.15}{It is the intention that, at any time, the ISC-proposed representatives have 3, 2 and 1 year(s) respectively left to serve. In the event of multiple such ITC members retiring, replacement members are approved, as necessary, for reduced periods. Non-elected (Host) representatives are replaced by members from the same Host Country.}
+
+\Appendix{3.15}{ITC proposals and elections:
+\begin{itemize}
+    \item The ISC proposes a list of candidates to be considered for the ITC.  Persons with an interest in serving on the ITC should contact the ISC for consideration;
+    \item If an election is required, then this will follow the procedure outlined for elections in \Link{A3.5}.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{3.16}{The \textbf{Chair of ITC} is elected from and by the committee members. The Chair of ITC reports directly to the ISC.}
+
+\Explication{3.16}{The Chair of ITC must be one of the three members proposed by the ISC.}
+
+\Separator{}
+
+\Statute{3.17}{The ITC is obliged to meet during each IOI and between 2 and 6 months prior to each IOI.}
+
+\Appendix{3.17}{ITC procedure:
+\begin{itemize}
+    \item At meetings of the ITC, the voting procedure is on the basis of “one voting member, one vote”. If there is a tie then the Chair of ITC may cast the deciding vote (in addition to their normal vote);
+    \item The ITC may select adjunct members who may include Host Country representatives and other suitable persons. Adjunct members will not have a vote on the committee nor do any other invitees;
+    \item The ITC will be in frequent communication with the technical representatives of the Host Country. The ITC will also be in frequent communication with the ISC; for example, through the Chair of the ISC participating in the ITC mailing list.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{3.18}{The \textbf{Organizing Committee} for \IOIn{} is the committee appointed by the Present Host (i.e. the Host Country for \IOIn{}), and which acts on its behalf. Members of the Organizing Committee may not be members of a National Delegation. The Organizing Committee includes as members:
+\begin{itemize}
+    \item The person who holds the Chair of the Organizing Committee, who is also the \textbf{Chair of \IOIn{}};
+    \item The person who holds the Chair of the HSC during \IOIn{};
+    \item The IC member who will remain on the IC after the Closing Ceremony for \IOIn{}.
+\end{itemize}
+The tasks of the Present Host and Organizing Committee are detailed in section 5.}
+
+\Explication{3.18}{In the year preceding \IOIn{} the Organizing Committee for \IOIn{} functions under the supervision of the IC, whose composition is established during \IOIn{-1}.}
+
+\Appendix{3.18}{The IOI Regulations can not and will not prescribe in which way the Organizing Committee for \IOIn{} is composed (beyond requiring the roles given in \Link{S3.18}) or how its tasks are to be performed by the members. There is no preference whether the Host Country for \IOIn{} combines any of the positions of the Chair of \IOIn{}, IC member and the Chair of the HSC in one person, or not. If several positions are combined in one person, each position is taken up as indicated for that position in the Statutes.}
+
+\Note{3.18.1}{The main reasons for the distinction between the three main positions are:
+\begin{itemize}
+    \item The Chair of \IOIn{} should have the authority on the national level to achieve the task of the Host Country.
+    \item The IC member should have the authority on the international level to achieve the objectives of the IC.
+    \item The Chair of the HSC should have the skills to develop Competition Tasks according to the current scientific state of the informatics discipline.
+\end{itemize}}
+
+\Note{3.18.2}{It is recommended that the organising Host does not reduce the Organizing Committee to one person.}
+
+\Separator{}
+
+\Statute{3.19}{The \textbf{Host Scientific Committee} of \IOIn{} is a temporary committee, which is appointed by the Present Host, and is composed of experts in informatics and/or informatics education from the Host Country. The \textbf{Chair of the HSC} is a member of the Organizing Committee. Members of the HSC may not be members of a National Delegation.}
+
+\Explication{3.19.1}{HSC obligations:
+\begin{itemize}
+    \item Prepare sufficient Competition Tasks;
+    \item Present these tasks and the associated Contest Rules to the GA for approval;
+    \item Execute the Contest Rules;
+    \item Support the GA with information that is needed for allocating awards to the Contestants;
+    \item Report to the Organizing Committee about their proceedings on a regular basis;
+    \item Work with the ISC to ensure continuity and quality control.
+\end{itemize}}
+
+\Explication{3.19.2}{The members of ISC and ITC who are appointed by the Host Country for \IOIn{}, or their representatives, are required to attend \IOIn{-1}.}
+
+\Appendix{3.19}{If there is disagreement between the HSC and ISC regarding the preparation of the Contest Rules or the statements and/or test data for the Competition Tasks, then this disagreement will be resolved through a formal vote of the ISC (which includes a representative from HSC).}
+
+\Separator{}
+
+\Statute{3.20}{The GA at \IOIn{} may establish committees for \IOIn{+1} other than those listed in the current regulations.}
+
+\end{itemize}
+
+\newpage
+\section{Host Nomination and Selection}
+\label{sec:4}
+\begin{itemize}
+
+\Statute{4.1}{An official representative of a Country that is capable and willing to organise an IOI in a particular year, must submit a \textbf{Letter of Intent} to the Secretary. The Secretary will acknowledge the Letter of Intent and supply rules applicable to the situation. The Country becomes a \textbf{Potential Host}.}
+
+\Explication{4.1.1}{Countries may become Potential Hosts for any year up to \IOIn{+7}}.
+
+\Explication{4.1.2}{A Country may submit more than one letter of intent, each being for a specific year.}
+
+\Explication{4.1.3}{More than one country may submit a letter of intent for a specific year.}
+
+\Explication{4.1.4}{If multiple Countries are willing to organise an IOI together, a single Letter of Intent is required. This group of Countries would then become a single Potential Host.}
+
+\Appendix{4.1}{The IC will request a brief report from Potential Hosts including, but not limited to, information on:
+\begin{itemize}
+    \item{Proposed venues (competition and accommodation);}
+    \item{Availability of hardware resources;}
+    \item{Human resources (including HSC);}
+    \item{A rough draft budget;}
+    \item{Fund raising plans.}
+\end{itemize}}
+
+\Separator{}
+
+\Statute{4.2}{The IC performs a selection procedure and nominates a single candidate from the Potential Hosts for hosting the IOI in a specific year. This decision must be ratified by the GA. After ratification, the Secretary will issue a formal written \textbf{Invitation} at which point the Country becomes the \textbf{Candidate Host} for year $x$.}
+
+\Explication{4.2.1}{The intent of IC is that the selection procedure for \IOIn{} will take place during \IOIn{-4}, and the status of Candidate Host will be conferred shortly after. The selection will not take place any earlier than \IOIn{-5}.}
+
+\Explication{4.2.2}{There is only one Candidate Host for a given year.}
+
+\Explication{4.2.3}{The IC selection procedure is \emph{not} on the basis of first come first served.}
+
+\Note{4.2}{The status of Candidate Host is not given until after the formal written invitation.}
+
+\Separator{}
+
+\Statute{4.3}{A Candidate Host receives the status of \textbf{Future Host} when the Invitation is accepted by the national organisation(s) involved, and \emph{confirmed in writing} to the Secretary. The IC informs the GA at the first GA meeting after this confirmation.}
+
+\Explication{4.3}{Written confirmation must be received at least two years before that particular IOI. It should always be known which Countries will host the IOI in the coming three years.}
+
+\Note{4.3}{The IC expects to receive written confirmation as early as possible and would usually expect it at least three years before the IOI.}
+
+\Separator{}
+
+\Statute{4.4}{The Future Host becomes the \textbf{Present Host} in the year in which it hosts the IOI.}
+
+\end{itemize}
+
+\newpage
+\section{Responsibilities of Present Host}
+\label{sec:5}
+\begin{itemize}
+
+\Statute{5.1}{The Present Host for \IOIn{} is obliged to organise and implement \IOIn{} in accordance with the Regulations.}
+
+\Separator{}
+
+\Statute{5.2}{The Present Host is obliged to establish:
+\begin{itemize}
+    \item An Organizing Committee that acts on its behalf;
+    \item A Host Scientific Committee.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{5.3}{The Present Host is obliged to prepare:
+\begin{itemize}
+    \item Guidelines for the organisation of \IOIn{}, which may be written in a language of one of the Present Host’s Countries; an English summary must however be presented to the IC;
+    \item Contest Rules in English.
+\end{itemize}}
+
+\Appendix{5.3}{The Present Host is obliged to prepare Guidelines for the organisation, a plan suited for the local situation of \IOIn{}, for the production, organisation, timetables and distribution of information about:
+\begin{itemize}
+    \item \textbf{Present Host}: organising institute(s), Organizing Committee, secretariat of \IOIn{} (with names and complete addresses);
+    \item \textbf{Programme}: date of \IOIn{}, date and time of the Opening Ceremony, Competitions, GA, Awards and Closing Ceremony, agenda of social \& cultural programme;
+    \item \textbf{Locations}: complete addresses of all \IOIn{} location(s), buildings, rooms, maps;
+    \item \textbf{Facilities}: computers for Leaders and Contestants, Internet, photocopier, organisational \& technical support, support to and from the OIOI;
+    \item \textbf{Board \& lodging/leisure}: bedrooms, meals, meal-times, facilities for refreshment, sport, medical care and insurance;
+    \item \textbf{Registration}: invitation to participate, newsletters, registration forms and procedures for Participants, deadlines for registration, fees for Adjuncts and Guests, list of names, addresses and bedrooms of Participants;
+    \item \textbf{Country information}: visas, travelling between seaport or airport and \IOIn{} location(s), travelling between \IOIn{} location(s), public transport, currency, stamps, public telephone, climate, complete address of tourist association, voltage;
+    \item \textbf{Competition}: establishing a Host Scientific Committee, global description and preparation of Competition Tasks and associated judging model, equipment \& software, conducting the Competition, technical support, Contest Rules;
+    \item \textbf{Awards}: medals and Honourable Mentions;
+    \item \textbf{Proceedings}: production and distribution;
+    \item \textbf{Financing} (not necessarily public): fees, sponsors, accounting.
+\end{itemize}
+The Contest Rules contain information about: asking questions, reporting failures, testing data-files, printing, decision using private media (with or without software or data-files), decision about using private printed or written materials, visiting the refreshment rooms, submitting solutions, and so on, during the Competition.\par
+The Present Host’s guidelines for catering must take into account different cultural and religious dietary requirements. In particular, vegetarian food must be available at all meals, the contents of dishes should be clearly indicated, and separate utensils and plates should be used for food which may be unacceptable to some Participants (e.g. pork).}
+
+\Note{5.3}{The Guidelines for the organisation of \IOIn{} is a plan which is necessary for the preparation, production, organisation, timescales, and distribution of information of \IOIn{}. The plan should be suited for the local situation in the Country offering \IOIn{}.}
+
+\Separator{}
+
+\Statute{5.4}{The Present Host is obliged to organise a meeting of the IC in one of the Present Host’s Countries, approximately six months before \IOIn{}.}
+
+\Explication{5.4}{This IC meeting has the following duties:
+\begin{itemize}
+    \item Evaluate \IOIn{-1} on the basis of the report given by the Host of \IOIn{-1};
+    \item Examine the organisation of \IOIn{};
+    \item Discuss a presentation of the Guidelines.
+\end{itemize}
+A discussion of the presentation of the Guidelines does mean that there is an agreement between the IC and the Organizing Committee about the contents of the Guidelines and the way the Organizing Committee prepares \IOIn{}.}
+
+\Separator{}
+
+\Statute{5.5}{The Present Host is obliged to organise meetings of the ISC and the ITC in one of the Present Host’s Countries, between 2 and 6 months before \IOIn{}.}
+
+\Explication{5.5}{These ISC and ITC meetings have the following tasks:
+\begin{itemize}
+    \item Screen all competition material, including environment and tasks;
+    \item Adopt the Contest Rules;
+    \item Inspect the grading system.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{5.6}{The Present Host is obliged to empower the IC to invite to \IOIn{}:
+\begin{itemize}
+    \item National Delegations, including a delegation from every Country that has participated in at least one of the past three IOIs;
+    \item Members of the IC, ISC and ITC;
+    \item Invited Observers from new Countries that applied for invitation and have been approved;
+    \item Invited Guests;
+    \item Invited Observers from the Future Hosts of \IOIn{+1} and \IOIn{+2};
+    \item Additional Participants at the discretion of the Present Host.
+\end{itemize}
+The Present Host can and should communicate its own wishes concerning the invitation of the Participants to the IC.}
+
+\Explication{5.6}{The Present Host is obliged to acknowledge, on its website and official material, all National Delegations who have accepted this invitation. This includes acknowledging those National Delegations who are unable to attend the IOI due to matters of international diplomacy or any other difficulties.}
+
+\Appendix{5.6}{If a new Country wishes to participate in the IOI as either a National Delegation or an Invited Observer, then they should apply through the Secretary.  The IC will discuss the case and decide whether to approve the application.\par
+The same process applies to a Country that has not participated in the past three IOIs. In this case, the IC will also attempt to contact the last known representatives of the Country.}
+
+\Note{5.6}{If a Country has not participated in any of the past three IOIs and wishes to re-apply for participation in future IOIs, they should contact the Secretary of the IOI. The IC is responsible for deciding whether to approve such applications. Such Countries would typically not be invited to return as Invited Observers whose board and lodging costs are paid by the Present Host.}
+
+\Separator{}
+
+\Statute{5.7}{The Present Host is obliged to send information to all invitees, at least four months before \IOIn{}, about:
+\begin{itemize}
+    \item Schedule and Programme;
+    \item Contest Rules;
+    \item Location;
+    \item Registration;
+    \item Present Host.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{5.8}{Each of the Present Host’s Countries may have a second, non-ranked, team at \IOIn{}.}
+
+\Explication{5.8}{If a Present Host’s Country wishes a second team in \IOIn{}:
+\begin{itemize}
+    \item The second team must obey Statute \Link{S2.3};
+    \item The second team will participate under the name \emph{Country}-2 or \emph{Country}-B;
+    \item The second team will participate on an equal footing with all other teams, but will not be ranked in the final results used for the allocation of awards. Their achievements shall not be counted towards their Country’s medal totals;
+    \item Any member of the second team with a score no less than the lowest score to achieve a medal, or a score on some day no less than the lowest score on that same day that is eligible to receive an Honourable Mention, will receive the corresponding award.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{5.9}{The travel costs to and from the location where the IC has its meeting, the ISC meets, the ITC meets, or where \IOIn{} is located, are at the expense of all Participants. Costs for board and lodging during the IC meeting, ISC meeting, ITC meeting, or during \IOIn{} are at the expense of the Present Host for:
+\begin{itemize}
+    \item Delegation Leaders, Deputy Leaders and Contestants;
+    \item Invited Observers as per \Link{S2.6};
+    \item Invited Participants as per \Link{S2.7}.
+\end{itemize}
+All other Participants have to pay a reasonable fee which is fixed by the Present Host.\par
+An additional Registration Fee may be payable, by Participants or Delegations, during \IOIn{}.}
+
+\Explication{5.9.1}{The Registration Fee must be paid by each country that participates through a National Delegation.}
+
+\Explication{5.9.2}{All requests for exemption from, or reduction of Registration Fees at \IOIn{} should be made to the Chair or IC member for \IOIn{}. Requests must be made at least three months before \IOIn{}. Full motivation is required.}
+
+\Explication{5.9.3}{Details of the Registration Fee for \IOIn{} are recommended to the GA by the IC at \IOIn{-1}. The Registration fee must be ratified by the GA at \IOIn{-1}.}
+
+\Appendix{5.9}{Registration Fees are transferred to a banking account in the name of the IOI Foundation (see \Link{S1.8}), administered by the Treasurer.}
+
+\Separator{}
+
+\Statute{5.10}{The Present Host is obliged, by the end of \IOIn{}, to:
+\begin{itemize}
+    \item Issue attendance certificates for all Participants;
+    \item Issue awarding certificates for all contestants who win medals or Honourable Mentions;
+    \item Produce a full result list containing the final scores of all contestants, as well as a list of all Participants, which are made available to the OIOI and ISC, along with the data required to generate those scores;
+    \item Hold an \textbf{Awards Ceremony} for the presentation of all medals, including any medals awarded to the second team.
+\end{itemize}}
+
+\Explication{5.10.1}{The Present Host must not post an official ranking by country.}
+
+\Explication{5.10.2}{Provisional scores (including contestant names and countries) may be made available during the contest.}
+
+\Explication{5.10.3}{During presentation of medals awarded to the second team they must be attributed to team \emph{Country}-2 or \emph{Country}-B.}
+
+\Note{5.10}{The full result list will, as a consequence, be published through the \href{https://stats.ioinformatics.org}{IOI Statistics website}.}
+
+\Separator{}
+
+\Statute{5.11}{The Present Host is obliged to hold a \textbf{Closing Ceremony} at the end of \IOIn{}. It is expected that this will be combined with the Awards Ceremony.}
+
+\Explication{5.11}{There will be an annual program to recognize individuals for their contribution to the activities of IOI, through Distinguished Service Awards. This program will be managed by the IC and call for nominations with submission deadline should be sent out every year. Candidates for nomination should:
+\begin{itemize}
+    \item Have attended IOI for at least 5 years as a member of an official IOI body or delegation;
+    \item Made a significant contribution to the activities and development of IOI, beyond the usual activities of a Delegation Leader, Deputy Leader or IOI Host;
+    \item Not be current members of IC.
+\end{itemize}
+Individuals who have passed away may be nominated.}
+
+\Appendix{5.11}{The IC will call for nominations from members of the IOI community for candidates deserving of recognition. The IC will determine the recipient(s) and advise the Organising Committee for \IOIn{}.}
+
+\Note{5.11}{Nominations for Distinguished Service Awards for \IOIn{} will be due before the IC meeting that takes before \IOIn{} (typically six months before \IOIn{} as described in \Link{S3.7}).}
+
+\Separator{}
+
+\Statute{5.12}{The Host Country for \IOIn{} is obliged to produce a report of \IOIn{}, as well as official solutions to the Competition Tasks.
+\begin{itemize}
+    \item A report of \IOIn{} should be sent to the IC no later than the first IC meeting for \IOIn{+1} outlined in \Link{S5.4};
+    \item A redacted report of \IOIn{} should be shared with GA at \IOIn{+1};
+    \item Official English solutions to the Competition Tasks should be posted no later than three months after \IOIn{}.
+\end{itemize}}
+
+\Note{5.12}{A decision on what information is redacted from the \IOIn{} report lies with the host of \IOIn{}.}
+
+\Separator{}
+
+\Statute{5.13}{The Present Host becomes a \textbf{Past Host} at the end of \IOIn{}.}
+
+\Separator{}
+
+\Statute{5.14}{During the awards presentation at the closing ceremony, contestants must not bring objects onto the stage that may obstruct other people.}
+
+\Note{5.14}{Examples of such objects include flags, mascots, etc.}
+
+\end{itemize}
+
+\newpage
+\section{Competition, Judging and Awards}
+\label{sec:6}
+\begin{itemize}
+
+\Statute{6.1}{The \textbf{Competition} will take place during two \textbf{Competition Days} both of which are directly preceded and followed by a non-Competition Day.}
+
+\Separator{}
+
+\Statute{6.2}{The Present Host should give the Contestants the opportunity to practise on the competition equipment and technical environment, or comparable equipment, prior to the Competition Days.}
+
+\Separator{}
+
+\Statute{6.3}{The HSC must present Contest Rules and Competition Tasks at appropriate meetings of the GA for approval. The Delegation Leaders may translate the approved Contest Rules and Competition Tasks into their national languages, without giving any additional information. Translations should remain faithful to the original text. All translated tasks must be made available for scrutiny, during the competition days, by all Delegations during \IOIn{}.}
+
+\Note{6.3}{Translations are provided to make the competition accessible to all students. Translations should remain faithful so that descriptions are consistent for all contestants.}
+
+\Separator{}
+
+\Statute{6.4}{The Contestants are required to solve the Competition Tasks given to them, together with any translations and materials permitted by the Contest Rules. There should be no communication or information, other than that permitted by the Contest Rules.}
+
+\Separator{}
+
+\Statute{6.5}{During the Competition each Contestant must work independently on a desk with an appropriate computer, writing instrument and paper.}
+
+\Separator{}
+
+\Statute{6.6}{During the Competition, Contestants must obey the \textbf{Contest Rules}.}
+
+\Separator{}
+
+\Statute{6.7}{The Present Host must ensure that GA members, as well as any other persons who have seen the Competition Tasks (apart from the HSC, ISC and ITC acting officially), do not meet and/or come into any form of contact or communication with Contestants, from the time the Competition Tasks are made known until after the corresponding Competition. GA members and other persons who have seen the Competition Tasks must not discuss these Tasks with people who have not seen them until after the corresponding Competition has begun.}
+
+\Separator{}
+
+\Statute{6.8}{Delegation Leaders should be available on each Competition Day to translate into English any questions put by the Contestants about the Competition Tasks. The questions are to be answered by the HSC and ISC, and if required the GA, with a phrase (such as \texttt{YES}, \texttt{NO}, or \texttt{NO COMMENT}) from a fixed list specified in the Contest Rules.}
+
+\Separator{}
+
+\Statute{6.9}{Evaluation is to be carried out during the Competition, or as soon as possible after, in accordance with the \textbf{Contest Rules}.}
+
+\Appendix{6.9}{Evaluation:
+\begin{itemize}
+    \item The Organizing Committee executes the evaluation of the Competition Tasks according to the Contest Rules;
+    \item The outcome of the evaluation of each task element is made available to the Contestants and, after the Competition, also their Delegation Leaders;
+    \item The evaluation data and the contestants’ solutions are made available to the Contestants and their Delegation Leaders after the Competition.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{6.10}{If the Delegation Leader does not agree with the evaluation of the tasks or other aspects of the Competition that affect their Contestants’ scores, they should submit an appeal according to the Contest Rules.}
+
+\Appendix{6.10}{Appeals:
+\begin{itemize}
+    \item When a Delegation Leader submits an appeal, the HSC and ISC will investigate. The ISC will then decide upon a resolution, which may lead to a new allocation of points;
+    \item The ISC will present to the GA a summary of all appeals and resolutions. Where possible, this summary will avoid identifying the Countries involved. If  similar appeals have been submitted on behalf of three or more contestants, the ISC’s resolutions must be ratified by the GA.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{6.11}{The GA must confirm the scores and the \textbf{Awards} of the Contestants. Award boundaries are allocated by the following rules:
+\begin{itemize}
+    \item The score necessary to achieve a gold medal is the largest score such that at least one twelfth of all contestants receive a gold medal;
+    \item The score necessary to achieve a silver medal is the largest score such that at least one quarter of all contestants receive a gold or silver medal;
+    \item The score necessary to achieve a bronze medal is the largest score such that at least one half of all contestants receive a medal;
+    \item A contestant who does not receive a medal will be awarded an Honourable Mention if, in at least one of the two Competition Days, fewer than half of the contestants have a higher score.
+\end{itemize}}
+
+\Explication{6.11}{If, before the end of the GA meeting in which the awards are confirmed, it is discovered that one or more Contestants fails to meet the eligibility criteria of \Link{S2.5}, then the number of contestants used to compute award boundaries will be reduced accordingly.}
+
+\Note{6.11.1}{Contestants and their Delegation Leader should be told their points, so that appropriate appeals can be made (see \Link{S6.10}).}
+
+\Note{6.11.2}{The HSC’s proposal and GA’s confirmation can take place at any GA meeting (\Link{S3.2}) before the IOI Awards Ceremony.}
+
+\Note{6.11.3}{For the purpose of allocating Honourable Mentions, the total number of contestants is the total number of Contestants in the IOI, not the number present on each particular day.}
+
+\Note{6.11.4}{Discounting ties in scores, half of the Contestants are to receive medals on the basis that:
+\begin{itemize}
+    \item One twelfth of all Contestants receive a gold medal;
+    \item One sixth of all Contestants receive a silver medal;
+    \item One quarter of all Contestants receive a bronze medal;
+    \item Half of Contestants on each Competition Day will, if they do not receive medals, be acknowledged with Honourable Mentions.
+\end{itemize}}
+
+\Separator{}
+
+\Statute{6.12}{In the event of unethical behaviour, including behaviour outside the contest, the IC is empowered to disqualify \IOIn{} Participants. Unethical behaviour includes any conduct that brings individuals, countries or the IOI into disrepute.}
+
+\Explication{6.12}{If a contestant is disqualified, they will still be counted for the purpose of computing boundaries for awards as described by \Link{S6.11}.}
+
+\Note{6.12}{The Code of Conduct includes examples of unethical behaviour, some of which may lead to disqualification.}
+
+\Separator{}
+
+\Statute{6.13}{If there are unforeseen large-scale problems during the Competition, the ISC is empowered to decide upon an appropriate resolution.  The ISC must inform the IC and the GA of their decision.  The GA may override the ISC’s decision with a 2/3 majority vote.}
+
+\Separator{}
+
+\Statute{6.14}{It is possible that a Country cannot participate in \IOIn{} due to a diplomatic issue with the Host Country, where the Host of \IOIn{} has advised the IC that it is highly unlikely that the Country will be granted permission to enter the Host Country. In such a case the IC may, at its discretion, allow the Country to participate from a remote location. This Country must apply to the IC for remote participation no later than \IOIn{-1}.}
+
+\Appendix{6.14.1}{The IC, in consultation with the ISC and ITC, will choose a representative to oversee the remote competition.}
+
+\Appendix{6.14.2}{The remote competition will take place as close as possible to the same time as the IOI.  Some small delay is acceptable, but only if the remote Competitors can be quarantined.}
+
+\Appendix{6.14.3}{All remaining details regarding the remote competition will be determined by the IC, in collaboration with the ISC and ITC.}
+
+\Note{6.14}{It is expected that remote participation will be a very rare event. In particular, \Link{S6.14} is not intended for common problems such as unexpected visa difficulties or funding shortfalls.}
+
+\end{itemize}
+
+\newpage
+\section{Revision of the Regulations}
+\label{sec:7}
+\begin{itemize}
+
+\Statute{7.1}{Revisions of the Regulations are prepared and proposed by the IC and adopted if approved by the GA.}
+
+\Explication{7.1}{Proposals for Regulation changes, by members of GA, can be submitted to IC for consideration. These should be submitted through the Secretary or the President of IOI. All proposals, whether adopted or rejected, must be communicated to the GA.}
+
+\Appendix{7.1}{Proposals for Regulation changes submitted between the IC meeting prior to \IOIn{} and the meeting prior to \IOIn{+1} will be discussed, at the latest, at the IC meeting prior to \IOIn{+1}.}
+
+\Separator{}
+
+\Statute{7.2}{Adoption of revisions to the Regulations requires a 2/3 majority vote by the GA.}
+
+\Separator{}
+
+\Statute{7.3}{Revisions to the Regulations, adopted during \IOIn{}, become binding at the end of \IOIn{}.}
+
+\Separator{}
+
+\Statute{7.4}{Regulation changes may be implemented more quickly, without the full procedure of \Link{S7.3}, provided there is IC approval. The GA requires at least one months notification. The GA must ratify these changes in the first GA meeting of \IOIn{}, and if ratified then the changes become binding immediately after this vote.}
+
+\Note{7.4}{The Present Host should, of course, be prepared for a scenario where the GA decides not to ratify the regulation changes, and so these changes are not adopted}
+
+\end{itemize}
+
+\end{document}
